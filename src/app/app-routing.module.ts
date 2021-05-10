@@ -7,9 +7,16 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'splesh',
+    loadChildren: () => import('./pages/splesh/splesh.module').then( m => m.SpleshPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'work-order',
+    loadChildren: () => import('./pages/work-order/work-order.module').then( m => m.WorkOrderPageModule)
   },
 ];
 

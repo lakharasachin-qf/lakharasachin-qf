@@ -1,0 +1,32 @@
+#container {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+  }
+
+  ion-toolbar{
+      box-shadow:220px;
+      --background:#376CB1;
+      color: #fff;
+      text-align: start;
+
+  }
+  .cardDesign{
+    border-radius: 54px !important;
+    margin-top: 9px;
+    box-shadow: 0 1px 5px 0 rgb(117 117 117 / 10%), 0 6px 15px 0 rgb(119 119 119 / 9%);
+
+    ion-item{
+        --padding-start:0px;
+        --padding-end:0px;
+    }
+    ion-label{
+        margin: 0px;
+    }
+    ion-avatar {
+        box-shadow: 0 1px 5px 0 rgb(117 117 117 / 10%), 0 6px 15px 0 rgb(119 119 119 / 9%);
+       
+        padding: 5px;
+    }
+  }

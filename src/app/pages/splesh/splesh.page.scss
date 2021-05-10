@@ -1,0 +1,39 @@
+ion-content{
+    --background:white;
+ 
+}
+.topBackground{
+    position: absolute;
+    width: 80%;
+}
+.bottomBackground{
+
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+  
+}
+
+.bottomSection img{
+    width: 100%;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+
+    img{
+        margin-top: -60px;
+        margin-left: 20px;
+        height: 14%;
+        width: auto;
+        
+    }
+}

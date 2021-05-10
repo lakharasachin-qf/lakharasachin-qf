@@ -1,0 +1,74 @@
+ion-toolbar{
+    box-shadow:220px;
+    --background:#376CB1;
+    color: #fff;
+    text-align: start;
+
+}
+#container {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+  }
+
+ion-label{
+    color: rgb(170, 170, 170);
+  }
+
+  ion-button{
+      margin-top: 20%;
+    --color:white;
+     font-family:poppins;
+    text-transform: capitalize;
+  }
+  .error_message{
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+  }
+  ion-item{
+    --padding-start: 0px;
+    color: rgb(170, 170, 170);
+  }
+  
+
+  .cardDesign ion-card{
+    border-radius: 10px !important;
+    margin-top: 9px;
+    box-shadow: 0 1px 5px 0 rgb(117 117 117 / 10%), 0 6px 15px 0 rgb(119 119 119 / 9%);
+  }
+
+  .cards {
+    .grid-full ion-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 5px 0;
+    }
+    .row {
+        padding: 0 12px;
+    }
+    .col {
+        padding: 5px 0;
+    }
+    .card {
+        
+        margin: 0 5px;
+        width: calc(100% - 10px);
+        padding: 14px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 4px;
+        h1 {
+            font-weight: 400;
+           // font-size: $main-font-size;
+            font-size: 3.5rem;
+        }
+        p {
+            font-weight: 100;
+            font-size: 1.5rem;
+        }
+    }
+}
+ion-input, ion-textarea{
+  color: black;
+}

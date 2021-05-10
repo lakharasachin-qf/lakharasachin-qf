@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-toolbar primary style="padding-left: 5px;">
+    <ion-title>Work Order</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button style="--color:white" text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div id="container">
+    <form>
+      <ion-item>
+        <ion-label position="floating">Party Name</ion-label>
+        <ion-input type="text" name="fname" value={{partyName}}></ion-input>
+      </ion-item>
+      <!-- <ng-container *ngFor="let validation of validationUserMessage.fname">
+        <div class="error_message"
+          *ngIf="validationFormUser.get('fname').hasError(validation.type) && (validationFormUser.get('fname').dirty || validationFormUser.get('fname').touched)">
+          {{validation.message}}
+        </div>
+      </ng-container> -->
+
+      <ion-item>
+        <ion-label position="floating">OEM</ion-label>
+        <ion-input type="text" name="lname"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Problem</ion-label>
+        <ion-textarea name="address" value={{complain}}></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Action Taken</ion-label>
+        <ion-textarea name="address"></ion-textarea>
+      </ion-item>
+      
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            Is Chargable?
+          </ion-item>
+        </ion-col>
+        <ion-radio-group value={{radioVal}}>
+          <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-label>Yes</ion-label>
+            <ion-radio slot="start" value="Yes"></ion-radio>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="none">
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="No"  ng-checked="isChargeAble==false"></ion-radio>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      
+        </ion-radio-group>
+      </ion-row>
+      
+      <ion-item>
+        <ion-label position="floating">Amount</ion-label>
+        <ion-input type="text" name="fname" value={{amount}}></ion-input>
+      </ion-item>
+
+      
+      <ion-item>
+        <ion-label position="floating">Conclusion</ion-label>
+        <ion-textarea name="address"></ion-textarea>
+      </ion-item>
+
+      <div cards>
+
+        <div class="grid-full">
+          <ion-row>
+            <ion-col>
+              <ion-card style="margin-inline: 0px; line-height: 7; text-align: center;">
+                 
+                  <img src="../../../assets/images/ic_add_image.svg"  />
+                  
+                 
+              </ion-card>
+            </ion-col>
+    
+            <!--
+            
+            <ion-col>
+              <ion-card style="margin-inline: 0px;">
+                <h1 grey>10</h1>
+                <p>Encerradas</p>
+              </ion-card>
+            </ion-col>
+
+            <ion-col>
+              <ion-card style="margin-inline: 0px;">
+                <h1 green>41</h1>
+                <p>Em gozo</p>
+              </ion-card>
+            </ion-col>
+
+            -->
+          
+          </ion-row>
+        </div>
+    
+      </div>
+    
+       <div class="button-container">
+        <ion-button expand="block" class="main-button" padding> Log In</ion-button>
+  
+      </div>
+    </form>
+  </div>
+</ion-content>

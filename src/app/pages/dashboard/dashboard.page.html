@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar primary>
+    <ion-title>Work Order List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div id="container">
+    <ion-card  class="cardDesign" *ngFor="let user of users; let i= index" >
+      <ion-item lines="none" (click)="goNextActivity(user,i)"> 
+        <div>
+        <ion-avatar item-start style="height: 60px; width: 60px; left: 0px; margin-right: 15px;">
+           <img src="../../../assets/images/woman-avatar.png"   style="  object-fit: contain;"/>
+
+        </ion-avatar>
+        </div>
+        <ion-label>
+        <ion-grid no-padding>
+          <ion-row class="ion-justify-content-start">
+            <ion-col size="9">
+              <div style="font-size: 16px; font-family: ProxiNova-Bold !important;  overflow:hidden; text-overflow: ellipsis; white-space: nowrap;">
+                {{user.WORKORDERID}}
+                <p style="font-size: 12px; font-family: ProxiNova-Regular !important;   overflow:hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  {{user.TICKETDATE}}
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <ion-row>
+                <p style="font-size: 14px; font-family: ProxiNova-Regular !important; font-family: ProxiNova-Regular;">Done</p>
+            </ion-row>
+            <ion-row>
+              <div style="text-align: end;
+              right: 24px;
+              position: absolute;" > 
+                <img   src="../../../assets/images/right-arrow.svg" class="align-middle"/> 
+              </div> 
+            </ion-row>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+       </ion-label>
+      </ion-item>
+    </ion-card>
+    
+</div>
+</ion-content>
